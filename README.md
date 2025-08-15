@@ -1,7 +1,12 @@
-
-# 🚀 Retro Spam Detector
+# 🚀 SmartFilter Pro
 
 A retro-themed machine learning web application that classifies SMS/Email messages as spam or legitimate using Natural Language Processing techniques.
+
+## 🌐 Live Demo
+
+**Try it now:** [https://smartfilter-pro.onrender.com/](https://smartfilter-pro.onrender.com/)
+
+Experience SmartFilter Pro live in your browser - no installation required!
 
 ## 🎯 Features
 
@@ -28,12 +33,17 @@ pip install scikit-learn
 pip install pickle
 ```
 
-## 🚀 Installation & Setup
+## 🚀 Quick Start
+
+### Option 1: Use Online (Recommended)
+Simply visit [https://smartfilter-pro.onrender.com/](https://smartfilter-pro.onrender.com/) and start classifying messages instantly!
+
+### Option 2: Local Installation
 
 1. **Clone the repository**
 ```bash
 git clone <repository-url>
-cd retro-spam-detector
+cd smartfilter-pro
 ```
 
 2. **Install required dependencies**
@@ -59,10 +69,19 @@ streamlit run app.py
 
 ## 🎮 How to Use
 
-1. Open the application in your web browser
-2. Enter your message in the "Message Input Terminal"
-3. Click "ANALYZE MESSAGE" button
-4. View the classification result:
+### Online Version
+1. Visit [https://smartfilter-pro.onrender.com/](https://smartfilter-pro.onrender.com/)
+2. Wait for the app to load (first visit may take 30-60 seconds)
+3. Enter your message in the "Message Input Terminal"
+4. Click "ANALYZE MESSAGE" button
+5. View the classification result instantly
+
+### Local Version
+1. Run the application using `streamlit run app.py`
+2. Open the application in your web browser
+3. Enter your message in the "Message Input Terminal"
+4. Click "ANALYZE MESSAGE" button
+5. View the classification result:
    - **🚨 SPAM DETECTED** - Message classified as spam
    - **✅ MESSAGE SAFE** - Message classified as legitimate
 
@@ -133,7 +152,7 @@ Did you see the match? It was insane
 ## 📁 Project Structure
 
 ```
-retro-spam-detector/
+smartfilter-pro/
 ├── app.py                 # Main Streamlit application
 ├── model.pkl             # Trained classification model
 ├── vectorizer.pkl        # TF-IDF vectorizer
@@ -150,7 +169,21 @@ retro-spam-detector/
 - **Interactive Elements**: Hover effects and smooth transitions
 - **Real-time Results**: Instant classification feedback
 
-## 🔧 Customization
+## 🌐 Deployment
+
+This application is deployed on **Render** for free hosting:
+- **Live URL**: [https://smartfilter-pro.onrender.com/](https://smartfilter-pro.onrender.com/)
+- **Platform**: Render.com
+- **Auto-deployment**: Connected to GitHub repository
+- **Cold starts**: May take 30-60 seconds to load on first visit
+
+### Deploy Your Own
+1. Fork this repository
+2. Create a Render account
+3. Connect your GitHub repository
+4. Deploy as a Web Service
+5. Set build command: `pip install -r requirements.txt`
+6. Set start command: `streamlit run app.py --server.port=$PORT --server.address=0.0.0.0`
 
 ### Changing Color Scheme
 Modify the CSS variables in the `st.markdown()` style section:
@@ -167,20 +200,20 @@ Modify the CSS variables in the `st.markdown()` style section:
 2. Modify the model loading section to use different algorithms
 3. Add confidence scores or probability distributions
 
-## 📈 Performance
+## 🔧 Customization
 
 - **Accuracy**: High precision on spam detection
 - **Speed**: Real-time processing (< 1 second)
 - **Memory**: Lightweight model suitable for web deployment
 - **Scalability**: Can handle multiple concurrent users
 
-## 🛡️ Security Considerations
+## 📈 Performance
 
 - No user data is stored or transmitted
 - All processing happens locally within the session
 - Model files should be kept secure and version controlled
 
-## 🤝 Contributing
+## 🛡️ Security Considerations
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
