@@ -156,6 +156,12 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
+import nltk
+
+# Download required NLTK resources
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 def transform_text(text):
     text = text.lower()
