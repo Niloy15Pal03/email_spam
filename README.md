@@ -1,4 +1,4 @@
-# email_spam
+
 # 🚀 Retro Spam Detector
 
 A retro-themed machine learning web application that classifies SMS/Email messages as spam or legitimate using Natural Language Processing techniques.
@@ -194,13 +194,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-Created with ❤️ by [Your Name]
+Created with ❤️ by [Niloy Pal]
 
 ## 📞 Support
 
 If you encounter any issues or have questions:
 - Open an issue on GitHub
-- Contact: [your-email@example.com]
+- Contact: [niloypal699@gmail.com]
 
 ---
 
